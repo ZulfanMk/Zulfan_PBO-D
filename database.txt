@@ -1,0 +1,16 @@
+DATABASE : Gudang
+
+CREATE TABLE IF NOT EXISTS buah(
+	id_buah int,
+	nama varchar(255),
+	ukuran varchar(255),
+	tanggal_panen DATE,
+	PRIMARY KEY(id_buah)
+)
+
+INSERT INTO buah (id_buah, nama, ukuran, tanggal_panen)
+VALUES
+(1, 'Apel', 'Sedang', '2023-05-15'),
+(2, 'Jeruk', 'Besar', '2023-06-01'),
+(3, 'Pisang', 'Sedang', '2023-05-20'),
+(4, 'Mangga', 'Besar', '2023-07-10');
